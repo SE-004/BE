@@ -40,10 +40,12 @@ export const getOneStudent = async (req: Request, res: Response) => {
 export const createStudent = async (req: Request, res: Response) => {
   try {
     const { firstName, lastName, email, age, courses } = req.body;
-    if (!firstName || !lastName || !email || !age || !courses) {
-      res.status(400).json({ msg: "All fields required" });
-      return;
-    }
+
+    // this has been replaced by Zod
+    // if (!firstName || !lastName || !email || !age || !courses) {
+    //   res.status(400).json({ msg: "All fields required" });
+    //   return;
+    // }
 
     const student = await Student.create({
       firstName,

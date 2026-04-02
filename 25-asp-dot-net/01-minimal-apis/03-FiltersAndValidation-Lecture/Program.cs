@@ -1,5 +1,6 @@
 using FiltersLecture.Dtos;
 using FiltersLecture.Models;
+using FiltersLecture.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
@@ -15,6 +16,8 @@ app.MapPost("/entries", (JournalEntryRequestDto entry) =>
     CreatedAt = DateTime.UtcNow
   };
   return Results.Created($"/entries/{journalEntry.Id}", journalEntry);
-});
+})
+.WithValidation<JournalEntryRequestDto>();
+// .AddEndpointFilter<ValidationFilter<JournalEntryRequestDto>>();
 
 app.Run();

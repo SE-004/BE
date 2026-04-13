@@ -1,6 +1,5 @@
 using BudgetApi.Models;
 using BudgetApi.Application.Interfaces;
-using BudgetApi.Dtos;
 using BudgetApi.Dtos.Transactions;
 
 namespace BudgetApi.Application.Services;

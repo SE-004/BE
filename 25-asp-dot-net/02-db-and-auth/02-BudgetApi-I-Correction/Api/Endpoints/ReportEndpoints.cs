@@ -18,7 +18,5 @@ public static class ReportEndpoints
       return TypedResults.Ok(reportDto);
     })
     .Produces<IEnumerable<SummaryReportResponseDto>>();
-
-
   }
 }

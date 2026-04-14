@@ -29,9 +29,10 @@ public class TransactionServiceEf : ITransactionService
   public async Task<Transaction> CreateAsync(CreateTransactionDto createTransactionDto)
   {
 
+    if (createTransactionDto.Type is null) throw new ArgumentException("Type is required");
     var transaction = new Transaction
     {
-      Type = createTransactionDto.Type!.Value,
+      Type = (TransactionType)createTransactionDto.Type,
       Description = createTransactionDto.Description,
       Amount = createTransactionDto.Amount,
       Date = createTransactionDto.Date ?? DateOnly.FromDateTime(DateTime.Now)

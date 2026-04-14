@@ -38,6 +38,4 @@ public class ReportServiceMock(ITransactionService transactionService) : IReport
     return new SummaryReportResponseDto(start, end, totalIncome, totalExpense, net);
 
   }
-
-
 }

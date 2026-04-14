@@ -31,7 +31,7 @@ public class TransactionServiceEf : ITransactionService
 
     var transaction = new Transaction
     {
-      Type = createTransactionDto.Type,
+      Type = createTransactionDto.Type!.Value,
       Description = createTransactionDto.Description,
       Amount = createTransactionDto.Amount,
       Date = createTransactionDto.Date ?? DateOnly.FromDateTime(DateTime.Now)

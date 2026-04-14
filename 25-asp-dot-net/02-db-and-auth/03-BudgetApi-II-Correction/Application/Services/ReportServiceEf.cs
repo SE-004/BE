@@ -38,6 +38,4 @@ public class ReportServiceEf(ITransactionService transactionService) : IReportSe
     return new SummaryReportResponseDto(start, end, totalIncome, totalExpense, net);
 
   }
-
-
 }

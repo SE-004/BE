@@ -1,0 +1,10 @@
+2026-04-20 13:49:09.125 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5109
+2026-04-20 13:49:09.245 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2026-04-20 13:49:09.247 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2026-04-20 13:49:09.248 [INF] Microsoft.Hosting.Lifetime: Content root path: C:\Users\garre\Desktop\exercises\03-be\02-c-sharp\chapter24-asp.net\week3\04-ObservabilityExercise\BudgetApi
+2026-04-20 13:49:10.362 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET / responded 404 in 365.2284 ms
+2026-04-20 13:49:10.717 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /favicon.ico responded 404 in 4.8996 ms
+2026-04-20 13:52:11.179 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 325.6802 ms
+2026-04-20 13:52:21.580 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 401 in 132.8217 ms
+2026-04-20 13:53:03.955 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 400 in 114.9529 ms
+2026-04-20 13:53:22.567 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 175.1888 ms

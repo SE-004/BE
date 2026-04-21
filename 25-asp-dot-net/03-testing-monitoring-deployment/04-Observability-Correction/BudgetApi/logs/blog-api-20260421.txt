@@ -1,0 +1,11 @@
+2026-04-21 09:11:14.179 [INF] Microsoft.Hosting.Lifetime: Now listening on: http://localhost:5109
+2026-04-21 09:11:14.222 [INF] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2026-04-21 09:11:14.222 [INF] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2026-04-21 09:11:14.223 [INF] Microsoft.Hosting.Lifetime: Content root path: C:\Users\garre\Desktop\batch_repos\SE-004\BE\25-asp-dot-net\03-testing-monitoring-deployment\04-Observability-Correction\BudgetApi
+2026-04-21 09:11:14.800 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET / responded 404 in 116.1511 ms
+2026-04-21 09:22:40.270 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP GET /health responded 200 in 381.7253 ms
+2026-04-21 09:27:03.124 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/register responded 200 in 1171.3925 ms
+2026-04-21 09:27:43.701 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 401 in 271.0727 ms
+2026-04-21 09:28:00.355 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /auth/login responded 200 in 298.0853 ms
+2026-04-21 09:28:50.418 [INF] Serilog.AspNetCore.RequestLoggingMiddleware: HTTP POST /api/transactions responded 201 in 459.3068 ms
+2026-04-21 09:31:25.057 [INF] Microsoft.Hosting.Lifetime: Application is shutting down...

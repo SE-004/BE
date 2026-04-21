@@ -64,7 +64,7 @@ builder.Host.UseSerilog((context, configuration) =>
           rollingInterval: RollingInterval.Day,
           outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {SourceContext}: {Message:lj}{NewLine}{Exception}")
       .Enrich.FromLogContext()
-      .Enrich.WithProperty("Application", "BlogApi");
+      .Enrich.WithProperty("Application", "BudgetApi");
 });
 
 builder.Services.AddHealthChecks()

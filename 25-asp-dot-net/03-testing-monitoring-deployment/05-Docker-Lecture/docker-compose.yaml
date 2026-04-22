@@ -30,6 +30,7 @@ services:
     environment:
       - ConnectionStrings__DefaultConnection=Server=db;Database=TinyDb;User=sa;Password=Your_password123;TrustServerCertificate=true;Encrypt=false
       - ApplyMigrations=true
+      - ASPNETCORE_ENVIRONMENT=Development
 
 volumes:
   db-data:
